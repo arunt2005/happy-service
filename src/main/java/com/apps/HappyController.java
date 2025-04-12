@@ -18,6 +18,7 @@ public class HappyController {
 
     @GetMapping("/")
     public ResponseEntity<?> info() {
+        System.out.println("welocme to happy controller class..");
         ResponseEntity<?> response = null;
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.TEXT_PLAIN);
