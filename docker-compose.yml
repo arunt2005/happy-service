@@ -1,0 +1,14 @@
+services:
+  happy-service:
+    build: .
+    image: happy-service:latest
+    ports:
+      - "1000:1000"
+    environment:
+      - SPRING_PROFILES_ACTIVE=prod
+    networks:
+      - happy-service-network
+
+networks:
+  happy-service-network:
+    driver: bridge
