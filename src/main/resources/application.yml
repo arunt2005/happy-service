@@ -1,0 +1,13 @@
+spring:
+  application:
+    name: happy-service
+
+
+server:
+  port: 1000
+  servlet:
+    context-path: /happy-service
+
+
+welcome:
+  msg: hello world.. this is happy service spring boot application.

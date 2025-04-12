@@ -1,37 +1,58 @@
+# Project-specific
 HELP.md
-.gradle
+
+# Gradle
+.gradle/
 build/
 !gradle/wrapper/gradle-wrapper.jar
-!**/src/main/**/build/
-!**/src/test/**/build/
 
-### STS ###
-.apt_generated
-.classpath
-.factorypath
-.project
-.settings
-.springBeans
-.sts4-cache
-bin/
-!**/src/main/**/bin/
-!**/src/test/**/bin/
+# OS-specific
+.DS_Store
+Thumbs.db
 
-### IntelliJ IDEA ###
-.idea
+# Logs
+*.log
+*.log.*
+
+# Spring Boot specific
+*.jar
+*.war
+*.class
+
+# Uploaded files (if you add file upload feature)
+uploads/
+
+# H2 / SQLite / embedded DBs (if used)
+*.h2.db
+*.mv.db
+*.db
+
+# IntelliJ IDEA
+.idea/
 *.iws
 *.iml
 *.ipr
 out/
-!**/src/main/**/out/
-!**/src/test/**/out/
 
-### NetBeans ###
+# VS Code
+.vscode/
+
+# Eclipse / STS
+.apt_generated/
+.classpath
+.factorypath
+.project
+.settings/
+.springBeans
+.sts4-cache
+bin/
+
+# NetBeans
 /nbproject/private/
 /nbbuild/
 /dist/
 /nbdist/
 /.nb-gradle/
 
-### VS Code ###
-.vscode/
+# Generated sources (if used)
+**/generated/
